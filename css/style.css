@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  background-color: #F4F9FC;
+  font-family: "Sedan", serif;
+  color: #0F1B61;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+  font-weight: 600;
+}
+
+html {
+  line-height: 1.25;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #0F1B61;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  height: 5px;
+  border-radius: 20px;
+  background: linear-gradient(to left, #0F1B61, #AADCEC);
+}
+
+header {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+}
+header #logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+header .navhr {
+  width: 100%;
+}
+
+#aboutme {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+#aboutme .imgbox {
+  width: 40%;
+}
+#aboutme .textbox {
+  width: 40%;
+  text-align: center;
+}
+#aboutme .textbox h1 {
+  font-size: 4.5rem;
+}
+#aboutme .textbox h2 {
+  font-size: 2rem;
+}
+
+#aboutme2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+}
+#aboutme2 .aboutText {
+  margin-top: 20px;
+}
+#aboutme2 .aboutText p {
+  color: #1C494C;
+  font-size: 2rem;
+}
+
+.buttn {
+  padding: 15px 45px;
+  border: 3px solid #0F1B61;
+  display: inline-block;
+  border-radius: 8px;
+}
+.buttn:hover {
+  transition: 0.5s;
+  background-color: #DCDCDC;
+}
+
+#services {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+}
+#services #holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#services .service {
+  padding: 40px;
+  min-height: 300px;
+}
+#services i {
+  font-size: 32px;
+}
+#services p {
+  font-size: 1.25rem;
+}
+
+#projects {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+}
+#projects #holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#projects #holder .imgp {
+  width: 25%;
+  background-color: #DCDCDC;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+#projects .imgp img {
+  width: 100%;
+  min-height: 200px;
+}
+
+#contact {
+  margin: 100px auto;
+  background: linear-gradient(to left, #DCDCDC, #AADCEC);
+  width: 80%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#contact input, #contact textarea {
+  margin: 5px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 16px;
+}
+#contact .btnform {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #DCDCDC;
+}
+footer #row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */

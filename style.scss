@@ -1,0 +1,121 @@
+@import 'base';
+@import 'variables';
+@import 'mixin';
+header {
+    width: 80%;
+    @include flex-center;
+    margin: 0px auto;
+     #logo {
+             @include flex-center;
+             font-weight: bold;
+             margin-top: 10px;
+             font-size: $medium-font-size;
+     }
+     .navhr {
+        width: 100%;
+     }
+}
+#aboutme {
+          @include flex-center-horiz;
+          margin-top: 110px;
+        .imgbox {
+            width: 40%;
+        }
+        .textbox {
+            width: 40%;
+            text-align: center;
+        }
+        .textbox h1{
+            font-size: 4.5rem;
+        }
+        .textbox h2{
+            font-size: 2rem;
+        }
+}
+#aboutme2 {
+  @include flex-center-column;
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+   .aboutText {
+    margin-top: 20px;
+   }
+   .aboutText p{
+    color: $secondary;
+    font-size: $medium-font-size; 
+   }
+}
+.buttn {
+	padding:15px 45px;
+    border: 3px solid $primary;
+	display: inline-block;
+	border-radius: 8px;
+    &:hover {
+       transition: 0.5s;
+       background-color: $gray;
+    }
+}
+#services{
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    #holder {
+        @include flex-center-sb;
+    }
+    .service{
+        padding: 40px;
+        min-height: 300px;
+    }
+    i {
+        font-size: 32px;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+}
+#projects {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    #holder {
+        @include flex-center-sb;
+        .imgp{
+            width: 25%;
+            background-color: $gray;
+            box-shadow: $base-box-shadow;
+        }
+    }
+    .imgp img{
+        width: 100%;
+        min-height: 200px;
+    }
+}
+#contact{
+    margin: 100px auto;
+    background: linear-gradient(to left, $gray, #AADCEC);
+    width: 80%;
+    border-radius: 50px;
+    @include flex-center-column;
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+}
+   input,textarea{
+        margin: 5px;
+        padding: 5px 20px;
+        border-radius: 20px;
+        width: 100%;
+        font-size: 16px;
+   }
+   .btnform{
+    cursor: pointer;
+   }
+}
+footer{
+    background-color: $gray;
+    #row{
+        @include flex-center-sb;
+        padding: 20px 10px;
+        font-size: 2rem;
+    }
+}
