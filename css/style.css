@@ -36,6 +36,7 @@ p {
 
 h1 {
   font-size: 4rem;
+  color: #0F1B61;
 }
 
 h2 {
@@ -58,10 +59,10 @@ hr {
 
 header {
   width: 80%;
+  margin: 0px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px auto;
 }
 header #logo {
   display: flex;
@@ -122,45 +123,52 @@ header .navhr {
   background-color: #DCDCDC;
 }
 
-#services {
-  width: 80%;
-  margin: 0px auto;
+#services h1 {
   text-align: center;
 }
-#services #holder {
+#services .holder {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0px auto;
 }
-#services .service {
-  padding: 40px;
-  min-height: 300px;
+#services .holder .blocks {
+  width: 30%;
+  background-color: #DCDCDC;
+  border: 3px solid #0F1B61;
 }
-#services i {
-  font-size: 32px;
+#services .holder .blocks .inside-holder {
+  margin: 10%;
 }
-#services p {
-  font-size: 1.25rem;
+#services .holder .blocks i {
+  font-size: 26px;
+  color: #0F1B61;
+}
+#services .holder .blocks p {
+  font-family: "Inter", sans-serif;
+  color: #0F1B61;
+}
+#services .holder .sec-three {
+  margin-top: 40px;
 }
 
 #projects {
   width: 80%;
   margin: 0px auto;
+}
+#projects h1 {
   text-align: center;
 }
-#projects #holder {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 #projects #holder .imgp {
-  width: 25%;
+  width: 20%;
   background-color: #DCDCDC;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 #projects .imgp img {
   width: 100%;
-  min-height: 200px;
+  max-height: 200px;
 }
 
 #contact {
@@ -180,7 +188,7 @@ header .navhr {
 #contact input, #contact textarea {
   margin: 5px;
   padding: 5px 20px;
-  border-radius: 20px;
+  border-radius: 8px;
   width: 100%;
   font-size: 16px;
 }
@@ -197,4 +205,112 @@ footer #row {
   justify-content: space-between;
   padding: 20px 10px;
   font-size: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  #services {
+    margin-top: 50px;
+  }
+  #services h1 {
+    margin-bottom: 50px;
+  }
+  #services .holder {
+    width: 100% !important;
+  }
+  #services .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #services .holder .prim-three {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 426px) {
+  h3 {
+    font-size: 18px !important;
+  }
+  #services .holder .blocks p {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 513px) {
+  input, textarea {
+    width: 90% !important;
+  }
+  #aboutme .imgbox {
+    margin-top: 60px;
+    width: 95% !important;
+  }
+  #services {
+    margin-top: 50px;
+  }
+  #services h1 {
+    margin-bottom: 50px;
+  }
+  #services .holder .blocks {
+    width: 100% !important;
+  }
+  #services .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #services .holder .prim-three {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav ul li a {
+    display: block !important;
+  }
+  #aboutme .imgbox {
+    width: 70% !important;
+  }
+  #services .holder .blocks p {
+    font-size: 15px;
+  }
+  #services .holder .blocks .h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 870px) {
+  #aboutme .imgbox {
+    width: 60% !important;
+  }
+  #aboutme2 .aboutText p {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 20px;
+  }
+  #aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #aboutme .textbox h1 {
+    font-size: 2.5rem;
+  }
+  #aboutme .textbox h2 {
+    font-size: 1.5rem;
+  }
+  #services {
+    margin-top: 20px !important;
+  }
+  #services h1 {
+    margin-bottom: 20px !important;
+  }
+  #services .holder .blocks {
+    width: 50% !important;
+  }
+  #services .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #services .holder .prim-three {
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

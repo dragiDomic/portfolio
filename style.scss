@@ -1,10 +1,10 @@
 @import 'base';
 @import 'variables';
 @import 'mixin';
+@import "responsive.scss";
 header {
-    width: 80%;
+    @include center;
     @include flex-center;
-    margin: 0px auto;
      #logo {
              @include flex-center;
              font-weight: bold;
@@ -56,38 +56,50 @@ header {
     }
 }
 #services{
-    width: 80%;
-    margin: 0px auto;
-    text-align: center;
-    #holder {
-        @include flex-center-sb;
+    h1{
+        text-align: center;
     }
-    .service{
-        padding: 40px;
-        min-height: 300px;
-    }
-    i {
-        font-size: 32px;
-    }
-    p {
-        font-size: 1.25rem;
+    .holder{
+        @include flex-center-wrap;
+        @include center;
+        .blocks{
+            .inside-holder{
+                margin: 10%;
+            }
+            width: 30%;
+            background-color: $gray;
+            border: 3px solid $primary;
+            i{
+                font-size: 26px;
+                color: $primary;
+            }
+            p{
+                font-family: 'Inter', sans-serif;
+                color: $primary;
+            }
+        }
+        .sec-three{
+            margin-top: 40px;
+        }
     }
 }
+
 #projects {
-    width: 80%;
-    margin: 0px auto;
-    text-align: center;
+   @include center;
+   h1 {
+    text-align: center
+   }
     #holder {
-        @include flex-center-sb;
         .imgp{
-            width: 25%;
+            width: 20%;
             background-color: $gray;
             box-shadow: $base-box-shadow;
+            text-align: center;
         }
     }
     .imgp img{
         width: 100%;
-        min-height: 200px;
+        max-height: 200px;
     }
 }
 #contact{
@@ -103,7 +115,7 @@ header {
    input,textarea{
         margin: 5px;
         padding: 5px 20px;
-        border-radius: 20px;
+        border-radius: 8px;
         width: 100%;
         font-size: 16px;
    }
@@ -117,5 +129,141 @@ footer{
         @include flex-center-sb;
         padding: 20px 10px;
         font-size: 2rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    #services{
+        margin-top: 50px;
+        h1{
+            margin-bottom: 50px;
+        }
+        .holder{
+            width: 100% !important;
+            .blocks{
+                .inside-holder{
+                    margin: 10%;
+                }
+            }
+            .prim-three{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 426px) {
+    h3{
+        font-size: 18px !important;
+    }
+    #services{
+        .holder{
+            .blocks{
+                p{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 513px) {
+    input, textarea{
+        width: 90% !important;
+    }
+    #aboutme{
+        .imgbox{
+            margin-top: 60px;
+            width: 95% !important;
+        }
+    }
+    #services{
+        margin-top: 50px;
+        h1{
+            margin-bottom: 50px;
+        }
+        .holder{
+            .blocks{
+                .inside-holder{
+                    margin: 10%;
+                }
+                width: 100% !important;
+            }
+            .prim-three{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        nav ul li a{
+            display: block !important;
+        }
+    }
+    #aboutme{
+        .imgbox{
+            width: 70% !important;
+        }
+    }
+    #services{
+        .holder{
+            .blocks{
+                p{
+                    font-size: 15px;
+                }
+                .h3{
+                    font-size: 18px;
+                }
+}
+        }
+    }
+}
+@media screen and (max-width: 870px) {
+    #aboutme{
+        .imgbox{
+            width: 60% !important;
+        }
+    }
+    #aboutme2{
+       .aboutText{
+        p{
+            font-size: 1.5rem;
+        }
+       }
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 20px;
+    }
+    #aboutme{
+        @include flex-center-column;
+        .textbox{
+            h1{
+                font-size: 2.5rem;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    #services{
+        margin-top: 20px !important;
+        h1{
+            margin-bottom: 20px !important;
+        }
+        .holder{
+            .blocks{
+                .inside-holder{
+                    margin: 10%;
+                }
+                width: 50% !important;
+            }
+            .prim-three{
+                margin-top: 40px;
+            }
+        }
     }
 }

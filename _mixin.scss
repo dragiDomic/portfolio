@@ -27,3 +27,12 @@
     display: flex;
     justify-content: center;
   }
+  @mixin flex-center-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@mixin center{
+    width: 80%;
+    margin: 0px auto;
+}
