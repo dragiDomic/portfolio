@@ -85,22 +85,18 @@ header {
 }
 
 #projects {
-   @include center;
-   h1 {
-    text-align: center
-   }
-    #holder {
-        .imgp{
-            width: 20%;
-            background-color: $gray;
-            box-shadow: $base-box-shadow;
-            text-align: center;
-        }
+    h1{
+        text-align: center;
     }
-    .imgp img{
-        width: 100%;
-        max-height: 200px;
+    .holder{
+        @include flex-center-horiz;
+        @include center;
+        .blocks{
+            .inside-holder{
+                margin: 10%;
+            }
     }
+}
 }
 #contact{
     margin: 100px auto;
@@ -131,92 +127,25 @@ footer{
         font-size: 2rem;
     }
 }
-@media screen and (max-width: 375px) {
-    #services{
-        margin-top: 50px;
-        h1{
-            margin-bottom: 50px;
-        }
-        .holder{
-            width: 100% !important;
-            .blocks{
-                .inside-holder{
-                    margin: 10%;
-                }
-            }
-            .prim-three{
-                margin-top: 40px;
-            }
-        }
-    }
-}
-@media screen and (max-width: 426px) {
-    h3{
-        font-size: 18px !important;
-    }
-    #services{
-        .holder{
-            .blocks{
-                p{
-                    font-size: 14px !important;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 513px) {
-    input, textarea{
-        width: 90% !important;
-    }
-    #aboutme{
-        .imgbox{
-            margin-top: 60px;
-            width: 95% !important;
-        }
-    }
-    #services{
-        margin-top: 50px;
-        h1{
-            margin-bottom: 50px;
-        }
-        .holder{
-            .blocks{
-                .inside-holder{
-                    margin: 10%;
-                }
-                width: 100% !important;
-            }
-            .prim-three{
-                margin-top: 40px;
-            }
-        }
-    }
-}
-@media screen and (max-width: 768px) {
-    header{
-        nav ul li a{
-            display: block !important;
-        }
-    }
-    #aboutme{
-        .imgbox{
-            width: 70% !important;
-        }
-    }
-    #services{
-        .holder{
-            .blocks{
-                p{
-                    font-size: 15px;
-                }
-                .h3{
-                    font-size: 18px;
-                }
-}
-        }
-    }
-}
 @media screen and (max-width: 870px) {
+    #projects{
+        margin-top: 20px !important;
+        h1{
+            margin-bottom: 20px !important;
+        }
+        .holder{
+            @include flex-center-wrap;
+            .blocks{
+                .inside-holder{
+                    margin: 10%;
+                }
+                width: 90% !important;
+            }
+            .prim-three{
+                margin-top: 40px;
+            }
+        }
+}
     #aboutme{
         .imgbox{
             width: 60% !important;
@@ -260,6 +189,135 @@ footer{
                     margin: 10%;
                 }
                 width: 50% !important;
+            }
+            .prim-three{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    footer{
+        p{
+            font-size: 15px;
+        }
+        i{
+            font-size: 20px;
+        }
+    }
+    header{
+        nav ul li a{
+            display: block !important;
+        }
+    }
+    #aboutme{
+        .imgbox{
+            width: 70% !important;
+        }
+    }
+    #services{
+        .holder{
+            .blocks{
+                p{
+                    font-size: 15px;
+                }
+                .h3{
+                    font-size: 18px;
+                }
+}
+        }
+    }
+}
+@media screen and (max-width: 513px) {
+    #projects{
+        margin-top: 50px;
+        h1{
+            margin-bottom: 50px;
+        }
+        .holder{
+            .blocks{
+                .inside-holder{
+                    margin: 10%;
+                }
+                width: 100% !important;
+            }
+            .prim-three{
+                margin-top: 40px;
+            }
+        }
+    }
+    input, textarea{
+        width: 90% !important;
+    }
+    #aboutme{
+        .imgbox{
+            margin-top: 60px;
+             
+        }
+        .aboutText{
+            h1{
+                font-size: 2rem;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    #services{
+        margin-top: 50px;
+        h1{
+            margin-bottom: 50px;
+        }
+        .holder{
+            .blocks{
+                .inside-holder{
+                    margin: 10%;
+                }
+                width: 100% !important;
+            }
+            .prim-three{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 426px) {
+    footer{
+        p{
+            display: none
+        }
+        div{
+            margin: 0px auto;
+            i{
+                font-size: 30px !important;
+            }
+        }
+    }
+    h3{
+        font-size: 18px !important;
+    }
+    #services{
+        .holder{
+            .blocks{
+                p{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    #services{
+        margin-top: 50px;
+        h1{
+            margin-bottom: 50px;
+        }
+        .holder{
+            width: 100% !important;
+            .blocks{
+                .inside-holder{
+                    margin: 10%;
+                }
             }
             .prim-three{
                 margin-top: 40px;

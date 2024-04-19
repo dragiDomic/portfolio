@@ -153,22 +153,17 @@ header .navhr {
   margin-top: 40px;
 }
 
-#projects {
-  width: 80%;
-  margin: 0px auto;
-}
 #projects h1 {
   text-align: center;
 }
-#projects #holder .imgp {
-  width: 20%;
-  background-color: #DCDCDC;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
+#projects .holder {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0px auto;
 }
-#projects .imgp img {
-  width: 100%;
-  max-height: 200px;
+#projects .holder .blocks .inside-holder {
+  margin: 10%;
 }
 
 #contact {
@@ -207,70 +202,27 @@ footer #row {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 375px) {
-  #services {
-    margin-top: 50px;
+@media screen and (max-width: 870px) {
+  #projects {
+    margin-top: 20px !important;
   }
-  #services h1 {
-    margin-bottom: 50px;
+  #projects h1 {
+    margin-bottom: 20px !important;
   }
-  #services .holder {
-    width: 100% !important;
+  #projects .holder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  #services .holder .blocks .inside-holder {
-    margin: 10%;
-  }
-  #services .holder .prim-three {
-    margin-top: 40px;
-  }
-}
-@media screen and (max-width: 426px) {
-  h3 {
-    font-size: 18px !important;
-  }
-  #services .holder .blocks p {
-    font-size: 14px !important;
-  }
-}
-@media screen and (max-width: 513px) {
-  input, textarea {
+  #projects .holder .blocks {
     width: 90% !important;
   }
-  #aboutme .imgbox {
-    margin-top: 60px;
-    width: 95% !important;
-  }
-  #services {
-    margin-top: 50px;
-  }
-  #services h1 {
-    margin-bottom: 50px;
-  }
-  #services .holder .blocks {
-    width: 100% !important;
-  }
-  #services .holder .blocks .inside-holder {
+  #projects .holder .blocks .inside-holder {
     margin: 10%;
   }
-  #services .holder .prim-three {
+  #projects .holder .prim-three {
     margin-top: 40px;
   }
-}
-@media screen and (max-width: 768px) {
-  header nav ul li a {
-    display: block !important;
-  }
-  #aboutme .imgbox {
-    width: 70% !important;
-  }
-  #services .holder .blocks p {
-    font-size: 15px;
-  }
-  #services .holder .blocks .h3 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 870px) {
   #aboutme .imgbox {
     width: 60% !important;
   }
@@ -306,6 +258,104 @@ footer #row {
   }
   #services .holder .blocks {
     width: 50% !important;
+  }
+  #services .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #services .holder .prim-three {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 15px;
+  }
+  footer i {
+    font-size: 20px;
+  }
+  header nav ul li a {
+    display: block !important;
+  }
+  #aboutme .imgbox {
+    width: 70% !important;
+  }
+  #services .holder .blocks p {
+    font-size: 15px;
+  }
+  #services .holder .blocks .h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 513px) {
+  #projects {
+    margin-top: 50px;
+  }
+  #projects h1 {
+    margin-bottom: 50px;
+  }
+  #projects .holder .blocks {
+    width: 100% !important;
+  }
+  #projects .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #projects .holder .prim-three {
+    margin-top: 40px;
+  }
+  input, textarea {
+    width: 90% !important;
+  }
+  #aboutme .imgbox {
+    margin-top: 60px;
+  }
+  #aboutme .aboutText h1 {
+    font-size: 2rem;
+  }
+  #aboutme .aboutText h2 {
+    font-size: 1.5rem;
+  }
+  #services {
+    margin-top: 50px;
+  }
+  #services h1 {
+    margin-bottom: 50px;
+  }
+  #services .holder .blocks {
+    width: 100% !important;
+  }
+  #services .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #services .holder .prim-three {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 426px) {
+  footer p {
+    display: none;
+  }
+  footer div {
+    margin: 0px auto;
+  }
+  footer div i {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  #services .holder .blocks p {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  #services {
+    margin-top: 50px;
+  }
+  #services h1 {
+    margin-bottom: 50px;
+  }
+  #services .holder {
+    width: 100% !important;
   }
   #services .holder .blocks .inside-holder {
     margin: 10%;
