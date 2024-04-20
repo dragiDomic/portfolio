@@ -58,6 +58,150 @@ hr {
   background: linear-gradient(to left, #0F1B61, #AADCEC);
 }
 
+header {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+header .navhr {
+  width: 100%;
+}
+
+#aboutme {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+#aboutme .imgbox {
+  width: 40%;
+}
+#aboutme .textbox {
+  width: 40%;
+  text-align: center;
+}
+#aboutme .textbox h1 {
+  font-size: 4.5rem;
+}
+#aboutme .textbox h2 {
+  font-size: 2rem;
+}
+
+#aboutme2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+}
+#aboutme2 .aboutText {
+  margin-top: 20px;
+}
+#aboutme2 .aboutText p {
+  color: #1C494C;
+  font-size: 2rem;
+}
+
+.buttn {
+  padding: 15px 45px;
+  border: 3px solid #0F1B61;
+  display: inline-block;
+  border-radius: 8px;
+}
+.buttn:hover {
+  transition: 0.5s;
+  background-color: #DCDCDC;
+}
+
+#services h1 {
+  text-align: center;
+}
+#services .holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0px auto;
+}
+#services .holder .blocks {
+  width: 30%;
+  background-color: #DCDCDC;
+  border: 3px solid #0F1B61;
+}
+#services .holder .blocks .inside-holder {
+  margin: 10%;
+}
+#services .holder .blocks i {
+  font-size: 26px;
+  color: #0F1B61;
+}
+#services .holder .blocks p {
+  color: #0F1B61;
+}
+#services .holder .sec-three {
+  margin-top: 40px;
+}
+
+#projects h1 {
+  text-align: center;
+}
+#projects .holder {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0px auto;
+}
+#projects .holder .blocks .inside-holder {
+  margin: 10%;
+}
+
+#contact {
+  margin: 100px auto;
+  background: linear-gradient(to left, #DCDCDC, #AADCEC);
+  width: 80%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#contact input, #contact textarea {
+  margin: 5px;
+  padding: 5px 20px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+}
+#contact .btnform {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #DCDCDC;
+}
+footer #row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  font-size: 2rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -277,147 +421,4 @@ hr {
   #services .holder .prim-three {
     margin-top: 40px;
   }
-}
-header {
-  width: 80%;
-  margin: 0px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header #logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin-top: 10px;
-  font-size: 2rem;
-}
-header .navhr {
-  width: 100%;
-}
-
-#aboutme {
-  display: flex;
-  justify-content: center;
-  margin-top: 110px;
-}
-#aboutme .imgbox {
-  width: 40%;
-}
-#aboutme .textbox {
-  width: 40%;
-  text-align: center;
-}
-#aboutme .textbox h1 {
-  font-size: 4.5rem;
-}
-#aboutme .textbox h2 {
-  font-size: 2rem;
-}
-
-#aboutme2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  margin: 100px auto;
-  text-align: center;
-}
-#aboutme2 .aboutText {
-  margin-top: 20px;
-}
-#aboutme2 .aboutText p {
-  color: #1C494C;
-  font-size: 2rem;
-}
-
-.buttn {
-  padding: 15px 45px;
-  border: 3px solid #0F1B61;
-  display: inline-block;
-  border-radius: 8px;
-}
-.buttn:hover {
-  transition: 0.5s;
-  background-color: #DCDCDC;
-}
-
-#services h1 {
-  text-align: center;
-}
-#services .holder {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0px auto;
-}
-#services .holder .blocks {
-  width: 30%;
-  background-color: #DCDCDC;
-  border: 3px solid #0F1B61;
-}
-#services .holder .blocks .inside-holder {
-  margin: 10%;
-}
-#services .holder .blocks i {
-  font-size: 26px;
-  color: #0F1B61;
-}
-#services .holder .blocks p {
-  color: #0F1B61;
-}
-#services .holder .sec-three {
-  margin-top: 40px;
-}
-
-#projects h1 {
-  text-align: center;
-}
-#projects .holder {
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  margin: 0px auto;
-}
-#projects .holder .blocks .inside-holder {
-  margin: 10%;
-}
-
-#contact {
-  margin: 100px auto;
-  background: linear-gradient(to left, #DCDCDC, #AADCEC);
-  width: 80%;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#contact h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-#contact input, #contact textarea {
-  margin: 5px;
-  padding: 5px 20px;
-  border-radius: 8px;
-  width: 100%;
-  font-size: 16px;
-}
-#contact .btnform {
-  cursor: pointer;
-}
-
-footer {
-  background-color: #DCDCDC;
-}
-footer #row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 10px;
-  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
