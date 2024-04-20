@@ -1,1 +1,221 @@
-/*# sourceMappingURL=responsive.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  background-color: #F4F9FC;
+  font-family: "Sedan", serif;
+  color: #0F1B61;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+  font-weight: 600;
+}
+
+html {
+  line-height: 1.25;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #0F1B61;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #0F1B61;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  height: 5px;
+  border-radius: 20px;
+  background: linear-gradient(to left, #0F1B61, #AADCEC);
+}
+
+@media screen and (max-width: 870px) {
+  #projects {
+    margin-top: 20px !important;
+  }
+  #projects h1 {
+    margin-bottom: 20px !important;
+  }
+  #projects .holder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #projects .holder .blocks {
+    width: 90% !important;
+  }
+  #projects .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #projects .holder .prim-three {
+    margin-top: 40px;
+  }
+  #aboutme .imgbox {
+    width: 60% !important;
+  }
+  #aboutme2 .aboutText p {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 20px;
+  }
+  #aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #aboutme .textbox h1 {
+    font-size: 2.5rem;
+  }
+  #aboutme .textbox h2 {
+    font-size: 1.5rem;
+  }
+  #services {
+    margin-top: 20px !important;
+  }
+  #services h1 {
+    margin-bottom: 20px !important;
+  }
+  #services .holder .blocks {
+    width: 50% !important;
+  }
+  #services .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #services .holder .prim-three {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 15px;
+  }
+  footer i {
+    font-size: 20px;
+  }
+  header nav ul li a {
+    display: block !important;
+  }
+  #aboutme .imgbox {
+    width: 70% !important;
+  }
+  #services .holder .blocks p {
+    font-size: 15px;
+  }
+  #services .holder .blocks .h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 513px) {
+  #projects {
+    margin-top: 50px;
+  }
+  #projects h1 {
+    margin-bottom: 50px;
+  }
+  #projects .holder .blocks {
+    width: 100% !important;
+  }
+  #projects .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #projects .holder .prim-three {
+    margin-top: 40px;
+  }
+  input, textarea {
+    width: 90% !important;
+  }
+  #aboutme .imgbox {
+    margin-top: 60px;
+  }
+  #aboutme .aboutText h1 {
+    font-size: 2rem;
+  }
+  #aboutme .aboutText h2 {
+    font-size: 1.5rem;
+  }
+  #services {
+    margin-top: 50px;
+  }
+  #services h1 {
+    margin-bottom: 50px;
+  }
+  #services .holder .blocks {
+    width: 100% !important;
+  }
+  #services .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #services .holder .prim-three {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 426px) {
+  footer p {
+    display: none;
+  }
+  footer div {
+    margin: 0px auto;
+  }
+  footer div i {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  #services .holder .blocks p {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  #services {
+    margin-top: 50px;
+  }
+  #services h1 {
+    margin-bottom: 50px;
+  }
+  #services .holder {
+    width: 100% !important;
+  }
+  #services .holder .blocks .inside-holder {
+    margin: 10%;
+  }
+  #services .holder .prim-three {
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
