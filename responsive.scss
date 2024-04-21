@@ -120,9 +120,6 @@
             }
         }
     }
-    input, textarea{
-        width: 80% !important;
-    }
     #aboutme{
         .imgbox{
             margin-top: 60px;
@@ -156,6 +153,9 @@
     }
 }
 @media screen and (max-width: 426px) {
+    #contact{
+        border-radius: 0px;
+    }
     footer{
         p{
             display: none

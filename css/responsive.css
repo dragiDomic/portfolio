@@ -157,9 +157,6 @@ hr {
   #projects .holder .prim-three {
     margin-top: 40px;
   }
-  input, textarea {
-    width: 80% !important;
-  }
   #aboutme .imgbox {
     margin-top: 60px;
   }
@@ -186,6 +183,9 @@ hr {
   }
 }
 @media screen and (max-width: 426px) {
+  #contact {
+    border-radius: 0px;
+  }
   footer p {
     display: none;
   }
